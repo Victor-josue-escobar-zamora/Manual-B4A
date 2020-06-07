@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual B4A</title>
+    <h3><a href=https://en.wikipedia.org/wiki/Basic4android/>Mas info sobre B4A</a></h3> 
+    <h3> <a href=https://www.youtube.com/channel/UC8FoI14qj2OlqZudjvKrGMg>Suscibete a mi canal de Youtube</a></h3>
+    <link rel="stylesheet" href="diseño.css">
+  </head>
+  <body style="background-color: rgb(160, 212, 247);">
+    
+    <h3>
+    
+    <center>
+      <h1>Manual B4A</h1>
+     <p>
+        <img src="https://faradars.org/wp-content/uploads/2017/12/FVAND9609-svg.svg"width="50%"high="50%">
+      </p>
+
+    <li><a href="#1.0">Sentencia Condicional IF</a></li>
+    <li><a href="#1.1">Sentencia Select “Switch”</a></li>
+    <li><a href="#1.2">Sentencia Bucles “FOR”</a></li>
+    <li><a href="#1.3">Programacion orientada a eventos</a></li>
+   <li><a href="#1.4">Cadenas,Concatenar</a></li>
+    <li><a href="#1.5">Label</a></li>
+    <li><a href="#1.6">Edit text</a></li>
+    <li><a href="#1.7">Button</a></li>
+    
+  <i><h1 id="1.0">Sentencia Condicional IF</h1></i>
+    <p> 
+      <br>La instrucción o sentencia IF, controla el flujo de ejecución del programa. Dependiendo</br> de una condición, ejecuta una secuencia de instrucciones o no las ejecuta. El resultado<br> podrá ser verdadero o falso. Solo si es verdadero se ejecuta la instrucción.</br>
+      A la instrucción IF se le puede agregar una clausula ELSE, que permiten ejecutar una<br> instrucción o un bloque de instrucciones en el caso de que la condición no cumpla.</br>
+    <p>
+      <img src="https://www.ecodeup.com/wp-content/uploads/2016/09/ESTRUCTURAS-CONTROL-CONDICIONALES.png" width="50%"high="50%">
+    </p>
+    
+      <br>Ejemplo De Cómo Usar El IF:</br>
+    
+<br>Para iniciar la sentencia se usa IF
+Número > 1 (condicional se refiere a que si mi número es mayor a 1 entonces </br> es positivo.
+ Después de hacer la etiqueta
+(etiqueta. Text = Número (asignándole un número).
+Cuando le asignamos<br> el número 0 o 1 al cuadro de texto y le presionamos al botón que le hemos llamado (validar) en la etiqueta no nos</br> marca nada, lo cual indica que no es mayor el número que 1, si le asignamos el número 2 etc. Me mostrara el número <br>en la etiqueta. La otra parte también igual de importante de IF es ELSE esto sirve como “Sino".
+
+ElSE puede referirse a:</br> (si no),un término utilizado en programación; 
+El condicional ELSE, es una estructura de control, que nos permiten <br>tomar ciertas decisiones al interior de nuestro algoritmo, es decir, nos permiten determinar qué acciones tomar dada o</br> no cierta condición, por ejemplo, determinar si la contraseña ingresada por el usuario, es válida o no.
+<p>
+<img src="img/val.jpg" width="50%"high="50%">
+</p>
+Otro modo de trabajar es editar la etiqueta como:
+Etiqueta. Text = “el número es positivo:” & número 
+
+Esto <br>donde muestra el texto y el número es negativo o si es positivo.</br>
+<p>
+  <img src="img/pos.jpg" width="30%"high="50%">
+</p>
+      </br>
+    </p>
+  <i><h1 id="1.1">Sentencia Select “Switch”</h1></i>
+    <p>
+        <br>Select Case en Visual Basic equivale a la introducción Switch de otros lenguajes. La expresión a evaluar puede ser un <br>valor numérico o una cadena de texto. Sólo se puede evaluar una expresión y no múltiples expresiones.
+     En los lenguajes</br> de programación, Switch Case o Switch Statement, es un tipo de mecanismo de control de selección utilizada para permitir <br>que el valor de una variable o expresión cambie el flujo de control de la ejecución del programa mediante búsqueda y mapa. <br>Para utilizar Select se necesita modificar el paquete.
+        <p>
+        <img src="img/mod.jpg"width="50%"high="100%">
+      </p>
+      Después de haber modificado el paquete se necesita poner SELECT en la Aplicación Label.
+      <p> 
+      <img src="img/sel.jpg"width="50%"high="100%">
+    </p>
+    Esto sirve para enlazar el diseño de nuestro código ya que es muy necesario hacerlo.
+    <br>Para seguir enlazando necesitamos dar (Dim Etiqueta As Label).
+    <p>
+      <img src="img/cod.jpg"width="50%"high="100%">
+    </p>
+    Select se usa para evaluar y dependiendo del valor te dará la repuesta correcta. Select Texto (es el inicio), End Select (es el final).
+<br>Para ver los resultados de Select se necesita que ingresar una letra (en el cuadro de texto).
+<p>
+<img src="img/select.jpg"width="50%"high="100%">
+</p>
+Para eso necesitamos asignar un 
+Texto = CuadroTexto.Text
+Case “a” (es el caso de la letra a)
+<p>
+  <img src="img/eva.jpg"width="50%"high="100%">
+</p>
+En este caso si le colocas la letra i, no pasara nada.
+Pero si le coloco la letra A te dará lo que le hayas puesto para que te<br> mostrara. Y así sucesivamente se puede seguir programando.
+Hay otra situación que se puede hacer en lugar al usar<br> letras otras letras que no están registradas en la aplicación.
+Case Else 
+Etiqueta.Text = “Otra letra”
+<p>
+  <img src="img/otra.jpg"width="50%"high="100%">
+</p>
+No solo se pude usar letras o palabras sino también se pueden colocar números.
+Ejemplo:
+<p>
+  <img src="img/eje.jpg"width="50%"high="100%">
+</p>
+ </br>
+ </p>
+  <i><h1 id="1.2">Sentencia Bucles “FOR”</h1></i>
+<p>
+    <br>En general, un bucle es una estructura de control que repite un bloque de instrucciones.
+    Un Bucle For es un <br>bloque de un número predeterminado de veces. El bloque de introducciones que se repite se suele llamar <br>cuerpo del bucle y cada repetición se suele llamar lite ración.
+    <p>
+      <img src="img/buc.jpg"width="50%"high="100%">
+    </p>
+    La sintaxis de un Bucle For es la siguiente:
+for variable in elemento iterable (lista, cadena, range, etc.):
+    cuerpo del bucle<br>
+
+No es necesario definir la variable de control antes de bucle, aunque se pueda utilizar como variable de control una <br>variable ya define en el programa.
+El cuerpo del Bucle se ejecuta tantas veces como elementos tenga el<br> elemento recurrible (elementos de una lista o de un range), características de una cadena. 
+
+Ejemplo: 
+
+<p>
+print("Comienzo")
+for i in [0, 1, 2]:
+    print("Hola ", end="")
+print()
+print("Final")
+Comienzo
+Hola Hola Hola
+Final.
+</p>
+<p>
+Pude ver la ejecución paso a paso de este programa utilizando los iconos de avance y <br>retroceso situados abajo a la derecha.
+Si la lista está vacía, el Bucle no se ejecutará ninguna vez.
+</p>
+<p>
+Ejemplo:
+print("Comienzo")
+for i in []:
+    print("Hola ", end="")
+print()
+print("Final")
+Comienzo
+Final
+</p>
+<p>
+Puede ver la ejecución paso a paso de este programa utilizando los iconos de avance y retroceso situados abajo a la derecha.<br>
+Se ejecuta la primera introducción del programa.
+En este caso, imprime el párrafo de comienzo.
+En este caso, <br>la variable de control es i y toma el valor 1.
+</p>
+<p>
+for i in [1, 1, 1]:
+    print ("Hola ", end="") 
+print ()
+print("Final")
+</p>
+<p>
+La variable de control toma el segundo valor de la lista.   
+Existe una manera más rápida de trabajar, <br>en lugar de poner 
+Log (1)
+Log (2)
+Se hace lo siguiente:
+</p>
+<p>
+  <img src="img/pub.jpg"width="50%"high="100%">
+</p>
+  <p>
+    <img src="img/pub2.jpg"width="50%"high="100%">
+  </p>
+  <p>
+    <img src="img/pub3.jpg"width="50%"high="100%">
+  </p>
+    </br>
+   </p>
+  <i><h1 id="1.3">Programacion orientada a eventos</h1></i>
+    <p>
+        <br>Para entender la programación dirigida por eventos, podemos oponerla a lo que no es: mientras en la programación <br>secuencial (o estructurada) es el programador el que define cuál va a ser el flujo del programa, en la programación <br>dirigida por eventos será el propio usuario o lo que sea que esté accionando el programa, el que dirija el flujo del programa.<br> Aunque en la programación secuencial puede haber intervención de un agente externo al programa, estas intervenciones <br>ocurrirán cuando el programador lo haya determinado, y no en cualquier momento como puede ser en el caso de la<br> programación dirigida por eventos.
+        El creador de un programa dirigido por eventos debe definir los eventos qué manejarán<br> su programa y las acciones que se realizarán al producirse cada uno de ellos, lo que se conoce como el administrador de evento. 
+        <p>
+          <img src="img/eve.jpg"width="50%"high="100%">
+        </p> 
+        Los eventos soportados estarán determinados por el lenguaje de programación utilizado, por el sistema operativo e<br> incluso por eventos creados por el mismo programador.
+        Esto se hace para que se carguen los controles e variables.
+        <p>
+          <img src="img/control.jpg"width="50%"high="100%" >
+        </p>
+        En la programación dirigida por eventos, al comenzar la ejecución del programa se llevarán a cabo las inicializaciones<br> y demás código inicial y a continuación el programa quedará bloqueado hasta que se produzca algún evento.<br>Aquí es para hacer un código que va realizado con la ejecución de un evento.
+        <p>
+        El evento es click.
+        </p> 
+        <p>
+          <img src="img/vic.jpg"width="50%"high="100%">
+        </p>
+        Cuando alguno de los eventos esperados por el programa tenga lugar, el programa pasará a ejecutar el<br> código del correspondiente administrador de evento.
+También existe otra manera de evento diferente botón.
+
+<p>
+  <img src="img/evento.jpg"width="50%"high="100%">
+</p>
+Por ejemplo, si el evento consiste en qué el usuario ha hecho clic en el botón de play de un reproductor de películas, <br>se ejecutará el código del administrador de evento, que será el que haga que la película se muestre por pantalla.
+        
+        </br>
+    </p>
+  <i><h1 id="1.4">Cadenas,Concatenar</h1></i>
+    <p>
+        <br>
+          <img src="img/cadenas.jpg"width="50%"high="100%">
+          <p>
+          La concatenación o conduplicación es, en general, el acto de unir o enlazar cosas. ... También<br> se pueden concatenar dos cadenas de caracteres o un carácter con una cadena para formar una <br>cadena de mayor tamaño. Algunos lenguajes formales. Enlace químico figuras retóricas.<br>
+Para ver el diseño se necesita hacer: 
+<p>
+<img src="img/diseño.jpg"width="50%"high="100%"> 
+</p>
+Siempre y cuando estén conectados todos los botones.
+<p>
+  <img src="img/glo.jpg"width="50%"high="100%" >
+</p>
+Esto te mostrara lo que todo lo que quieras.<br>
+Lo que también necesitas poner el valor de las variables, como lo siguientes:
+<p>
+<img src="img/sig.jpg"width="50%"high="100%" >
+<p>
+  Conocer el valor de lo que le indicas
+</p>
+<img src="img/ind.jpg"width="50%"high="100%">
+<p>
+  Asignar un texto a la etiqueta.
+</p>
+<img src="img/eti.jpg"width="50%"high="100%">
+      </br>
+    </p>
+  <i><h1 id="1.5">Label</h1></i>
+    <p>
+        <br>El control Label. El componente Label es el que nos permite incluir palabras, letras o frases en la pantalla (form) <br>de forma visual, no es lo mismo que introducir un texto, sino que hablamos de algún texto que queremos que<br> aparezca en la pantalla, con si de un rotulo o mensaje se tratara.
+        Por ejemplo, para mostrar el texto "Hola"<br> agrega un label al formulario, coloca un Botón, hace doble click en el mismo, escribe Label1 y presiona él ".",<br> Visual Basic te desplegará la lista de propiedades y métodos del Label1.
+        Label es una pequeña etiqueta.<br>
+        El control Label, sirve principalmente, para mostrar información, por ejemplo, exhibir un título o un subtítulo.
+        <p>
+          <img src="img/label.jpg"width="50%"high="100%">
+        </p>
+        Label tiene propiedades importantes como las siguientes:<br><p>
+•	Name: por default es Label1, Label2, Label3 etc., según se vayan agregando Labels, pero debemos cambiarlo a un Name que nos oriente,<br> para reconocerlo en el código.
+Ejemplo el Label del ejemplo anterior, podría llamarse LblTítulo, Indicándonos que ese Label lleva un título.<br><p>
+•	Back Color: para cambiar color de fondo<br><p>
+•	Fore Color: para cambiar color de letra<br><p>
+•	Font: para modificar el tamaño, tipo y estilo de la letra<br><p>
+•	Auto size: Si está en True no nos permitirá modificar el tamaño del Label más allá del espacio que ocupa el texto.<br><p>
+•	Border Style: Permite cambiar el borde del Label.<br><p>
+•	Text: Para escribir el texto visible en el Label.<br><p>
+•	Text Align: Para alinear el texto visible a la izquierda, derecha, arriba, abajo o al centro del Label.<br><p>
+•	Image: Para insertar imagen en el Label.<br>
+
+        </br>
+    </p>
+  <i><h1 id="1.6">Edit text</h1></i>
+    <p>
+        <br>EditText se encarga del ingreso de información.
+        Se necesita estar visible para que se pueda ver el control,<br> necesitas escribir lo que quiera hacer en el Activity, y te mostrara las propiedades. También se puedan colocar números.
+        </p>
+        <p>
+        <img src="img/edit.jpg"width="50%"high="100%"><br>
+        <p/>
+        <p>Tiene varios eventos como:<br></p>
+TextChanged<br> 
+EnterPressed<br>
+FocusChanged<br>
+<p>
+Se necesita tener vinculados los códigos para poder usar el FocusChanged.
+<p>
+  <img src="img/camp.jpg"width="50%"high="100%" >
+</p>
+</p>
+
+
+        </br>
+    </p>
+  <i><h1 id="1.7">Button</h1></i>
+    <p>
+        <br>El control Button o botón es de mucha utilidad, pues a través de él, podemos dar órdenes, o sea, sirve como <br>comando, por eso en las primeras versiones de Visual Basic se llamaba Command Button o botón de comando.<br> En el siguiente ejercicio usaremos un botón para que muestre un mensaje.
+        El control Button de Windows Forms <br>permite al usuario hacer clic en él para llevar a cabo una acción. Al hacer clic en el botón, parece como si se<br> hubiera presionado y soltado.<p> Siempre que el usuario hace clic en un botón, se invoca el controlador de eventos <br>Click. Coloque el código en el controlador de eventos Click para realizar cualquier acción que elija.
+        El texto<br> que se muestra en el botón está contenido en la propiedad Text. Si el texto supera el ancho del botón, se ajustará<br> a la línea siguiente. Sin embargo, se recortará si el control no puede dar cabida a su alto total.<p> Para obtener más información, vea Cómo: establecer el texto mostrado por un control de Windows Forms. La propiedad Text puede<br> contener una tecla de acceso, que permite al usuario "hacer clic" en el control presionando la tecla ALT con<br> la tecla de acceso. Para obtener más información, consulte Cómo: crear claves de acceso para controles de Windows <br>Forms. La apariencia del texto se controla mediante la propiedad Font y la propiedad TextAlign.<p>
+        El control Button también puede mostrar imágenes mediante las propiedades Image y ImageList. Para obtener más información, vea Cómo:<br> establecer la imagen mostrada por un Control Windows Forms.
+        Esto hace que cambien el color al presionar o dejarlo presionado.<br>
+        <p>
+          <img src="img/jpg.jpg"width="50%"high="100%" >
+        </p>
+        <p>
+          <img src="img/jpg1.jpg"width="50%"high="100%">
+        </p>
+        El ButtonCorto_Click es para que cambie el texto.<br> 
+El ButtonCorto_LongClick es páralo cambio de texto y definir el color del texto.
+<p>
+  <img src="img/cort.jpg"width="50%"high="100%">
+</p>
+<p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkeNwM0APKN8hOJSTFbXO5izN57XUVFTJyDPIqv_Y8_gkH7iMh&usqp=CAU"width="20%"high="50%">
+</p>
+        </br>
+    </p>
+    
+  </center>
+</h3>
+  </body>
+</html>
